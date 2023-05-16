@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .container {
+    @apply w-[94%] sm:w-[620px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-4/5 mx-auto;
+  }
+}
