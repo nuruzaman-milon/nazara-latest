@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import {
   FaBars,
-  FaCreditCard,
   FaSearch,
   FaShoppingBag,
   FaTimes,
@@ -22,15 +21,15 @@ const Navbar = () => {
       {/* pc and desktop view  */}
       <div className="hidden lg:block container py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="bg-[#910000] px-2 py-1 text-lg">
+          <Link href="/" className="bg-[#910000] px-2 py-1 text-base">
             EXCLUSIVE WOMAN WEAR
           </Link>
           <Link href="/">
             <Image
               src="/images/nazara-navbar-logo.png"
               alt="logo"
-              width={260}
-              height={100}
+              width={250}
+              height={90}
             />
           </Link>
           <div className="w-60">
@@ -38,23 +37,23 @@ const Navbar = () => {
               <Image
                 src="/images/logo/user.svg"
                 alt="logo"
-                width={25}
-                height={25}
+                width={20}
+                height={20}
               />
               <Image
                 src="/images/logo/shopping-card.svg"
                 alt="logo"
-                width={25}
-                height={25}
+                width={20}
+                height={20}
               />
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mt-2">
           <div>
             <ul className="flex gap-2 2xl:gap-4">
               <div className="group">
-                <li className="font-semibold relative bg-base-100 text-primary-color cursor-pointer text-sm 2xl:text-base px-2 rounded-lg hover:underline underline-offset-4">
+                <li className="font-medium relative bg-base-100 text-primary-color cursor-pointer text-sm px-2 py-1 rounded-lg hover:underline underline-offset-4">
                   NEW ARRIVALS
                   <div className="h-6 w-full absolute lg:bottom-[-23px] xl:bottom-[-21px] left-0"></div>
                 </li>
@@ -93,7 +92,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="group">
-                <li className="font-semibold relative cursor-pointer text-sm 2xl:text-base px-2 rounded-lg hover:underline underline-offset-4">
+                <li className="font-medium relative cursor-pointer text-sm px-2 py-1 rounded-lg hover:underline underline-offset-4">
                   REGULAR WEAR
                   <div className="h-6 w-full absolute lg:bottom-[-23px] xl:bottom-[-21px] left-0"></div>
                 </li>
@@ -132,7 +131,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="group">
-                <li className="font-semibold relative cursor-pointer text-sm 2xl:text-base px-2 rounded-lg hover:underline underline-offset-4">
+                <li className="font-medium relative cursor-pointer text-sm px-2 py-1 rounded-lg hover:underline underline-offset-4">
                   PARTY WEAR
                   <div className="h-6 w-full absolute lg:bottom-[-23px] xl:bottom-[-21px] left-0"></div>
                 </li>
@@ -171,7 +170,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="group">
-                <li className="font-semibold relative cursor-pointer text-sm 2xl:text-base px-2 rounded-lg hover:underline underline-offset-4">
+                <li className="font-medium relative cursor-pointer text-sm  px-2 py-1 rounded-lg hover:underline underline-offset-4">
                   BRIDAL WEAR
                   <div className="h-6 w-full absolute lg:bottom-[-23px] xl:bottom-[-21px] left-0"></div>
                 </li>
@@ -215,12 +214,12 @@ const Navbar = () => {
                 </div>
               </div>
               <div>
-                <li className="font-semibold cursor-pointer text-sm 2xl:text-base px-2 rounded-lg hover:underline underline-offset-4">
+                <li className="font-medium cursor-pointer text-sm px-2 py-1 rounded-lg hover:underline underline-offset-4">
                   BOOK AN APPOINTMENT
                 </li>
               </div>
               <div>
-                <li className="font-semibold cursor-pointer text-sm 2xl:text-base px-2 rounded-lg hover:underline underline-offset-4">
+                <li className="font-medium cursor-pointer text-sm px-2 py-1 rounded-lg hover:underline underline-offset-4">
                   OUR LOCATIONS
                 </li>
               </div>
@@ -248,7 +247,7 @@ const Navbar = () => {
               <input
                 type="search"
                 id="default-search"
-                class="w-28 lg:w-32 xl:w-full p-2 pl-10 text-sm text-gray-900 rounded-full bg-gray-50 outline-none"
+                class="w-28 lg:w-32 xl:w-full p-2 pl-10 text-sm text-gray-900 rounded-full bg-gray-50 outline-none h-8"
                 placeholder="Search"
                 required
                 // w-1/2 lg:w-3/4 xl:w-full
@@ -314,7 +313,7 @@ const Navbar = () => {
                   <input
                     type="search"
                     id="default-search"
-                    class="w-full my-2 p-2 pl-10 text-sm text-gray-900 rounded-full bg-gray-50 outline-none"
+                    class="w-full p-2 pl-10 text-sm text-gray-900 rounded-full bg-gray-50 outline-none"
                     placeholder="Search"
                     required
                     // w-1/2 lg:w-3/4 xl:w-full
